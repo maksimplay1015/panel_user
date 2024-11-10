@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Панель управления дома</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="panel">
+    <h1>Панель Управления Домом</h1>
+    <button class="control-button" onclick="sendCommand('open_gate')">Открыть ворота</button>
+    <button class="control-button" onclick="sendCommand('close_gate')">Закрыть ворота</button>
+    <button class="control-button" onclick="sendCommand('close_windows')">Закрыть окна</button>
+    <button class="control-button" onclick="sendCommand('lower_house')">Убрать дом под землю</button>
+    <button class="sos-button control-button" onclick="sendCommand('sos')">SOS</button>
+    <p class="status" id="status">Система безопасности активна</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
