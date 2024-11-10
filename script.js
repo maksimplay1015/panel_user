@@ -26,7 +26,7 @@ function sendCommand(command) {
     document.getElementById('status').innerText = statusMessage;
 
     // Отправка команды на сервер
-    fetch('http://localhost:5000/command', {
+    fetch('https://panel-be9o.onrender.com', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
