@@ -10,12 +10,35 @@
 
 <div class="panel">
     <h1>Панель Управления Домом</h1>
-    <button class="control-button" onclick="sendCommand('open_gate')">Открыть ворота</button>
-    <button class="control-button" onclick="sendCommand('close_gate')">Закрыть ворота</button>
-    <button class="control-button" onclick="sendCommand('close_windows')">Закрыть окна</button>
-    <button class="control-button" onclick="sendCommand('lower_house')">Убрать дом под землю</button>
-    <button class="sos-button control-button" onclick="sendCommand('sos')">SOS</button>
-    <p class="status" id="status">Система безопасности активна</p>
+    <!-- Безопасность -->
+<h2>Безопасность</h2>
+<button class="control-button sos-button" onclick="sendCommand('sos')">SOS</button>
+<button class="control-button" onclick="sendCommand('lower_house')">Убрать дом под землю</button>
+<button class="control-button" onclick="sendCommand('lock_doors')">Блокировать двери</button>
+<button class="control-button" onclick="sendCommand('arm_security')">Включить систему безопасности</button>
+<button class="control-button" onclick="sendCommand('disarm_security')">Выключить систему безопасности</button>
+
+<!-- Управление доступом -->
+<h2>Управление доступом</h2>
+<button class="control-button" onclick="sendCommand('open_gate')">Открыть ворота</button>
+<button class="control-button" onclick="sendCommand('close_gate')">Закрыть ворота</button>
+<button class="control-button" onclick="sendCommand('open_door')">Открыть дверь</button>
+<button class="control-button" onclick="sendCommand('close_door')">Закрыть дверь</button>
+
+<!-- Освещение -->
+<h2>Освещение</h2>
+<button class="control-button" onclick="sendCommand('lights_on')">Включить свет</button>
+<button class="control-button" onclick="sendCommand('lights_off')">Выключить свет</button>
+<button class="control-button" onclick="sendCommand('dim_lights')">Приглушить свет</button>
+<button class="control-button" onclick="sendCommand('night_mode')">Ночной режим</button>
+
+<!-- Климат-контроль -->
+<h2>Климат-контроль</h2>
+<button class="control-button" onclick="sendCommand('set_temp_22')">Установить температуру 22°C</button>
+<button class="control-button" onclick="sendCommand('set_temp_25')">Установить температуру 25°C</button>
+<button class="control-button" onclick="sendCommand('turn_on_heating')">Включить отопление</button>
+<button class="control-button" onclick="sendCommand('turn_on_ac')">Включить кондиционер</button>
+
 </div>
 
 <script src="script.js"></script>
